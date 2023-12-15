@@ -1,0 +1,39 @@
+.dom-widget-container {
+  display: flex;
+  flex-direction: column;
+  width: 33vw;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  z-index: 999;
+  max-height: 90vh;
+}
+
+.dom-tree-container {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.dom-tree {
+  margin-top: 10px;
+}
+
+.dom-tree-element {
+  cursor: pointer;
+  width: 100%;
+
+  &_child {
+    padding-left: 20px;
+  }
+  &:hover {
+    background-color: #d7f5dd;
+  }
+}
+
+.selected-node {
+  margin-top: 10px;
+  font-weight: bold;
+}
